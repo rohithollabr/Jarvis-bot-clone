@@ -1,11 +1,11 @@
 
-# CTRL
+# cubot
 A modular telegram Python bot running on python3 with an sqlalchemy database.
 
 Originally a simple group management bot with multiple admin features, it has evolved, becoming extremely modular and 
 simple to use.
 
-Can be found on telegram as [CTRL](https://t.me/ctrlrobot).
+Can be found on telegram as [somebot](https://t.me/ctrlrobot).
 
  
 
