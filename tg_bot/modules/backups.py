@@ -138,7 +138,7 @@ def import_data(bot: Bot, update):
 					os.remove("{}-notimported.txt".format(chat_id))
 				return
 		except Exception as err:
-			msg.reply_text(tl(update.effective_message, "An error has occurred getting Ctrl backup!\nGo, ping [Support Chat](https://t.me/ctrlsupport) and ask if any solution of it!\n\nMaybe they can resolve your issue!"), parse_mode="markdown")
+			msg.reply_text(tl(update.effective_message, "An error has occurred getting Jarvis backup!\nGo, ping [Support Chat](https://t.me/mrrjsg) and ask if any solution of it!\n\nMaybe they can resolve your issue!"), parse_mode="markdown")
 			LOGGER.exception("An error when importing from Julie base!")
 			return
 
@@ -156,7 +156,7 @@ def import_data(bot: Bot, update):
 					text = "Backup comes from another chat, I can't return another chat to this chat"
 				return msg.reply_text(text, parse_mode="markdown")
 		except:
-			return msg.reply_text("There is problem while importing the data! Please ask in @ctrlsupport about why this happened.")
+			return msg.reply_text("There is problem while importing the data! Please ask in @mrrjsg about why this happened.")
 		# Check if backup is from self
 		try:
 			if str(bot.id) != str(data[str(chat.id)]['bot']):
@@ -173,7 +173,7 @@ def import_data(bot: Bot, update):
 			for mod in DATA_IMPORT:
 				mod.__import_data__(str(chat.id), data)
 		except Exception:
-			msg.reply_text("An error occurred while recovering your data. The process failed. If you experience a problem with this, please ask in @ctrlsupport!\nThank you!")
+			msg.reply_text("An error occurred while recovering your data. The process failed. If you experience a problem with this, please ask in @mrrjsg!\nThank you!")
 
 			LOGGER.exception("Imprt for the chat %s with the name %s failed.", str(chat.id), str(chat.title))
 			return
@@ -331,7 +331,7 @@ def export_data(bot: Bot, update: Update, chat_data):
 	# Backing up
 	backup[chat_id] = {'bot': bot.id, 'hashes': {'info': {'rules': rules}, 'extra': notes, 'blacklist': bl, 'disabled': disabledcmd, 'locks': locked}}
 	baccinfo = json.dumps(backup, indent=4)
-	f=open("Ctrl{}.backup".format(chat_id), "w")
+	f=open("Cubot{}.backup".format(chat_id), "w")
 	f.write(str(baccinfo))
 	f.close()
 	bot.sendChatAction(current_chat_id, "upload_document")
@@ -340,8 +340,8 @@ def export_data(bot: Bot, update: Update, chat_data):
 		bot.sendMessage(MESSAGE_DUMP, "*Successfully imported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`".format(chat.title, chat_id, tgl), parse_mode=ParseMode.MARKDOWN)
 	except BadRequest:
 		pass
-	bot.sendDocument(current_chat_id, document=open('Ctrl{}.backup'.format(chat_id), 'rb'), caption="*Successfully imported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `Ctrl's Backup` is specially made for notes.".format(chat.title, chat_id, tgl), timeout=360, reply_to_message_id=msg.message_id, parse_mode=ParseMode.MARKDOWN)
-	os.remove("CTRL{}.backup".format(chat_id)) # Cleaning file
+	bot.sendDocument(current_chat_id, document=open('Cubot{}.backup'.format(chat_id), 'rb'), caption="*Successfully imported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `Cubot's Backup` is specially made for notes.".format(chat.title, chat_id, tgl), timeout=360, reply_to_message_id=msg.message_id, parse_mode=ParseMode.MARKDOWN)
+	os.remove("CUBOT{}.backup".format(chat_id)) # Cleaning file
 
 
 # Temporary data
