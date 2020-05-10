@@ -54,7 +54,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
 
-DONATE_STRING = """Hey  you can Donate  to Marie Creator [Paul](t.me/sonoflars), as well as [AVATAR](t.me/Refundisillegal) for better server #ktnxbye."""
+DONATE_STRING = """Hey  you can Donate  to My Creator [rohit](t.me/rohithollabr), as well as [shadow](t.me/shadow9899) for better server #ktnxbye."""
 
 
 IMPORTED = {}
@@ -165,7 +165,7 @@ def send_start(bot, update):
                 
     keyboard = [[
         InlineKeyboardButton(text=tld(chat.id, 'Support Group'),
-                             url="https://t.me/ctrlsupport")
+                             url="https://t.me/mrrjsg")
         ]]
     keyboard += [[
         InlineKeyboardButton(text=tld(chat.id, '❔ Help'), callback_data="help_back")
@@ -410,7 +410,7 @@ def donate(bot: Bot, update: Update):
     if chat.type == "private":
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-        if OWNER_ID != 594813047 and DONATION_LINK:
+        if OWNER_ID != 1042070307 and DONATION_LINK:
             update.effective_message.reply_text("You can also donate to the person currently running me "
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
