@@ -30,7 +30,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations.",
          "required": false,
-         "value": "https://www.paypal.me/PaulSonOfLars"
+         "value": "https://t.me/rohithollabr"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables.",
@@ -38,15 +38,15 @@
      },
      "MESSAGE_DUMP": {
       "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
-      "value": "-1007777777777"
+      "value": "-1001165766781"
       },
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
-         "value": "594813047"
+         "value": "1042070307"
       },
       "OWNER_USERNAME": {
          "description": "Your username",
-         "value": "refundisillegal"
+         "value": "rohithollabr"
       },
       "PORT": {
          "description": "Port to use for your webhooks.",
@@ -59,11 +59,11 @@
       },
       "SUDO_USERS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
-         "value": "594813047"
+         "value": "1042070307"
       },
       "SUPPORT_USERS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
-         "value": "254318997 18673980 83489514 594813047"
+         "value": "1042070307"
       },
       "TOKEN": {
          "description": "Your bot token.",
@@ -81,7 +81,7 @@
       },
       "WHITELIST_USERS": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
-         "value": "254318997 18673980 83489514 594813047"
+         "value": "1042070307"
       }
    },
    "keywords": [
@@ -89,8 +89,8 @@
       "best",
       "group",
       "manager",
-      "ctrl"
+      "cubot"
    ],
-   "name": "CTRL",
-   "repository": "https://github.com/AVATARX0TIC/CTRL"
+   "name": "CUBOT",
+   "repository": "https://github.com/rohithollabr/Jarvis-bot-clone"
 }
