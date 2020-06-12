@@ -1,2 +1,8 @@
 - name: Statusoli
   uses: athul/statusoli@v1.9
+  
+if: always()
+      with:
+        chat: ${{ secrets.chat }}
+        token: ${{ secrets.token }}
+        status: ${{ job.status }}
