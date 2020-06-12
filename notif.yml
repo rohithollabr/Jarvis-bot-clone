@@ -1,0 +1,2 @@
+- name: Statusoli
+  uses: athul/statusoli@v1.9
