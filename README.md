@@ -9,7 +9,7 @@ Can be found as telegram as [somebot](https://t.me/thefriendship365bot).
 
  
 
-You can also tap the Deploy To Heroku button below to deploy straight to Heroku!
+u can also tap the Deploy To Heroku button below to deploy straight to Heroku!
 
 [![Build Status](https://travis-ci.com/AVATARX0TIC/CTRL.svg?branch=master)](https://travis-ci.com/AVATARX0TIC/CTRL)
 
