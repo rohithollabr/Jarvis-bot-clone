@@ -1,4 +1,4 @@
-    - name: Statusoli
+    - name: Jarvis-bot-clone
       uses: athul/statusoli@master
       if: always()
       with:
